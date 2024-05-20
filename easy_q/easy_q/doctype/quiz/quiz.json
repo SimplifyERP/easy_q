@@ -1,0 +1,246 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "QUIZ-.#####",
+ "creation": "2024-05-20 15:01:03.057567",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "question_section",
+  "quiz_question",
+  "quiz_details_section",
+  "quiz_type",
+  "column_break_etif",
+  "disabled",
+  "quiz_filters_section",
+  "quiz_customer_group",
+  "column_break_kpyr",
+  "quiz_list_name",
+  "quiz_options_and_marks_tab",
+  "options_and_marks_section",
+  "option_1",
+  "column_break_gndp",
+  "mark_1",
+  "section_break_soqf",
+  "option_2",
+  "column_break_ofti",
+  "mark_2",
+  "section_break_zxxu",
+  "option_3",
+  "column_break_zppb",
+  "mark_3",
+  "section_break_uawe",
+  "option_4",
+  "column_break_fuvm",
+  "mark_4",
+  "section_break_scgp",
+  "option_5",
+  "column_break_txel",
+  "mark_5",
+  "section_break_ltdi",
+  "option_6",
+  "column_break_mbkj",
+  "mark_6"
+ ],
+ "fields": [
+  {
+   "fieldname": "quiz_question",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Quiz Question",
+   "reqd": 1
+  },
+  {
+   "fieldname": "question_section",
+   "fieldtype": "Section Break",
+   "label": "Question"
+  },
+  {
+   "fieldname": "quiz_details_section",
+   "fieldtype": "Section Break",
+   "label": "Quiz Details"
+  },
+  {
+   "fieldname": "quiz_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Quiz Type",
+   "options": "\nSingle\nMultiSelect",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_etif",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "fieldname": "quiz_filters_section",
+   "fieldtype": "Section Break",
+   "label": "Quiz Filters"
+  },
+  {
+   "fieldname": "quiz_customer_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Quiz Customer Group",
+   "options": "Customer Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_kpyr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "quiz_list_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Quiz List Name",
+   "options": "Quiz List Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quiz_options_and_marks_tab",
+   "fieldtype": "Tab Break",
+   "label": "Quiz Options & Marks"
+  },
+  {
+   "fieldname": "options_and_marks_section",
+   "fieldtype": "Section Break",
+   "label": "Options & Marks"
+  },
+  {
+   "fieldname": "option_1",
+   "fieldtype": "Small Text",
+   "label": "Option 1"
+  },
+  {
+   "fieldname": "column_break_gndp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mark_1",
+   "fieldtype": "Int",
+   "label": "Mark 1"
+  },
+  {
+   "fieldname": "section_break_soqf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "option_2",
+   "fieldtype": "Small Text",
+   "label": "Option 2"
+  },
+  {
+   "fieldname": "column_break_ofti",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mark_2",
+   "fieldtype": "Int",
+   "label": "Mark 2"
+  },
+  {
+   "fieldname": "section_break_zxxu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "option_3",
+   "fieldtype": "Small Text",
+   "label": "Option 3"
+  },
+  {
+   "fieldname": "column_break_zppb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mark_3",
+   "fieldtype": "Int",
+   "label": "Mark 3"
+  },
+  {
+   "fieldname": "section_break_uawe",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "option_4",
+   "fieldtype": "Small Text",
+   "label": "Option 4"
+  },
+  {
+   "fieldname": "column_break_fuvm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mark_4",
+   "fieldtype": "Int",
+   "label": "Mark 4"
+  },
+  {
+   "fieldname": "section_break_scgp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "option_5",
+   "fieldtype": "Small Text",
+   "label": "Option 5"
+  },
+  {
+   "fieldname": "column_break_txel",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mark_5",
+   "fieldtype": "Int",
+   "label": "Mark 5"
+  },
+  {
+   "fieldname": "section_break_ltdi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "option_6",
+   "fieldtype": "Small Text",
+   "label": "Option 6"
+  },
+  {
+   "fieldname": "column_break_mbkj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mark_6",
+   "fieldtype": "Int",
+   "label": "Mark 6"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-20 17:25:29.369539",
+ "modified_by": "Administrator",
+ "module": "Easy-Q",
+ "name": "Quiz",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
