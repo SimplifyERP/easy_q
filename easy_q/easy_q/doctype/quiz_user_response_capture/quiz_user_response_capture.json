@@ -1,0 +1,179 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "QUIZ-RESPONSE-.#####",
+ "creation": "2024-05-20 16:11:39.455794",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "user_details_section",
+  "user_id",
+  "full_name",
+  "column_break_ddhi",
+  "company",
+  "disabled",
+  "quiz_filters_section",
+  "quiz_customer_group",
+  "column_break_ekfh",
+  "quiz_list_name",
+  "response_capture_tab",
+  "response_capture_table_section",
+  "response_table",
+  "user_score_capture_tab",
+  "score_card_section",
+  "quiz_score_card",
+  "score_capture_details_tab",
+  "score_statement_section",
+  "score_review_statement",
+  "score_section",
+  "total_score",
+  "column_break_bvej",
+  "quiz_completed_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Link",
+   "label": "User ID",
+   "options": "User"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "column_break_ddhi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "fieldname": "user_details_section",
+   "fieldtype": "Section Break",
+   "label": "User Details"
+  },
+  {
+   "fieldname": "quiz_filters_section",
+   "fieldtype": "Section Break",
+   "label": "Quiz Filters"
+  },
+  {
+   "fieldname": "quiz_customer_group",
+   "fieldtype": "Link",
+   "label": "Quiz Customer Group",
+   "options": "Customer Group"
+  },
+  {
+   "fieldname": "column_break_ekfh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "quiz_list_name",
+   "fieldtype": "Link",
+   "label": "Quiz List Name",
+   "options": "Quiz List Name"
+  },
+  {
+   "fieldname": "response_capture_tab",
+   "fieldtype": "Tab Break",
+   "label": "Response Capture"
+  },
+  {
+   "fieldname": "response_capture_table_section",
+   "fieldtype": "Section Break",
+   "label": "Response Capture Table"
+  },
+  {
+   "fieldname": "response_table",
+   "fieldtype": "Table",
+   "label": "Response Table",
+   "options": "User Response Capture Table"
+  },
+  {
+   "fieldname": "user_score_capture_tab",
+   "fieldtype": "Tab Break",
+   "label": "User Score Capture"
+  },
+  {
+   "fieldname": "score_card_section",
+   "fieldtype": "Section Break",
+   "label": "Score Card"
+  },
+  {
+   "fieldname": "quiz_score_card",
+   "fieldtype": "Table",
+   "label": "Quiz Score Card",
+   "options": "Quiz Score Card Table"
+  },
+  {
+   "fieldname": "score_review_statement",
+   "fieldtype": "Small Text",
+   "label": "Score Review Statement"
+  },
+  {
+   "fieldname": "score_statement_section",
+   "fieldtype": "Section Break",
+   "label": "Score Statement"
+  },
+  {
+   "fieldname": "score_section",
+   "fieldtype": "Section Break",
+   "label": "Score"
+  },
+  {
+   "fieldname": "total_score",
+   "fieldtype": "Int",
+   "label": "Total Score"
+  },
+  {
+   "fieldname": "column_break_bvej",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "quiz_completed_status",
+   "fieldtype": "Check",
+   "label": "Quiz Completed Status"
+  },
+  {
+   "fieldname": "score_capture_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Score Capture Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-20 22:20:03.913486",
+ "modified_by": "Administrator",
+ "module": "Easy-Q",
+ "name": "Quiz User Response Capture",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

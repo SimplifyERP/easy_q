@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-20 16:59:25.089853",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "quiz_question_id",
+  "question_name",
+  "quiz_option"
+ ],
+ "fields": [
+  {
+   "fieldname": "quiz_question_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Quiz Question ID",
+   "options": "Quiz"
+  },
+  {
+   "fieldname": "question_name",
+   "fieldtype": "Small Text",
+   "label": "Question Name"
+  },
+  {
+   "fieldname": "quiz_option",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Quiz Option",
+   "options": "\nFirst Option\nSecond Option\nThird Option\nFourth Option\nFifth Option\nSixth Option"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-20 17:01:15.882422",
+ "modified_by": "Administrator",
+ "module": "Easy-Q",
+ "name": "Quiz Score Card Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

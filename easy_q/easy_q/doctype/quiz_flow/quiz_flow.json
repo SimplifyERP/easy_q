@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "QUIZ-FLOW-.#####",
+ "creation": "2024-05-20 15:26:34.267002",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "quiz_filters_section",
+  "quiz_customer_group",
+  "disabled",
+  "column_break_xyhw",
+  "quiz_list_name",
+  "quiz_flow_tab",
+  "quiz_questions_flow_table_section",
+  "flow_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "quiz_filters_section",
+   "fieldtype": "Section Break",
+   "label": "Quiz Filters"
+  },
+  {
+   "fieldname": "quiz_customer_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Quiz Customer Group",
+   "options": "Customer Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_xyhw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.quiz_customer_group",
+   "fieldname": "quiz_list_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Quiz List Name",
+   "options": "Quiz List Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quiz_flow_tab",
+   "fieldtype": "Tab Break",
+   "label": "Quiz Flow"
+  },
+  {
+   "fieldname": "flow_table",
+   "fieldtype": "Table",
+   "label": "Flow Table",
+   "options": "Quiz Flow Table"
+  },
+  {
+   "depends_on": "eval:doc.quiz_list_name",
+   "fieldname": "quiz_questions_flow_table_section",
+   "fieldtype": "Section Break",
+   "label": "Quiz Questions Flow Table"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-20 22:18:52.971982",
+ "modified_by": "Administrator",
+ "module": "Easy-Q",
+ "name": "Quiz Flow",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
