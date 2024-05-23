@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:user_id",
+ "creation": "2024-05-21 15:45:05.062629",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "quiz_lead_form_section",
+  "first_name",
+  "last_name",
+  "full_name",
+  "password",
+  "column_break_jfhv",
+  "user_id",
+  "email_id",
+  "company"
+ ],
+ "fields": [
+  {
+   "fieldname": "quiz_lead_form_section",
+   "fieldtype": "Section Break",
+   "label": "Quiz Lead Form"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_jfhv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Data",
+   "label": "User ID",
+   "unique": 1
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email ID"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company"
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Data",
+   "label": "Password"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-22 20:04:00.216672",
+ "modified_by": "Administrator",
+ "module": "Easy-Q",
+ "name": "Quiz Lead",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

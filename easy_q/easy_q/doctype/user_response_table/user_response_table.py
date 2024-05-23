@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class QuizUserResponseCapture(Document):
+class UserResponseTable(Document):
 	pass
