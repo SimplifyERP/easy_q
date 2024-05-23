@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestQuizUserResponseCapture(FrappeTestCase):
+class TestQuizGroup(FrappeTestCase):
 	pass

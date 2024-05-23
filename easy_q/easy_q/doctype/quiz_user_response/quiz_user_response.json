@@ -13,16 +13,16 @@
   "company",
   "disabled",
   "quiz_filters_section",
-  "quiz_customer_group",
+  "quiz_group",
   "column_break_ekfh",
   "quiz_list_name",
-  "response_capture_tab",
-  "response_capture_table_section",
+  "user_response_tab",
+  "response__table_section",
   "response_table",
-  "user_score_capture_tab",
+  "user_score_tab",
   "score_card_section",
   "quiz_score_card",
-  "score_capture_details_tab",
+  "score_details_tab",
   "score_statement_section",
   "score_review_statement",
   "score_section",
@@ -35,9 +35,10 @@
    "fieldname": "user_id",
    "fieldtype": "Link",
    "label": "User ID",
-   "options": "User"
+   "options": "Quiz Lead"
   },
   {
+   "fetch_from": "user_id.full_name",
    "fieldname": "full_name",
    "fieldtype": "Data",
    "label": "Full Name"
@@ -47,6 +48,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "user_id.company",
    "fieldname": "company",
    "fieldtype": "Data",
    "label": "Company"
@@ -68,12 +70,6 @@
    "label": "Quiz Filters"
   },
   {
-   "fieldname": "quiz_customer_group",
-   "fieldtype": "Link",
-   "label": "Quiz Customer Group",
-   "options": "Customer Group"
-  },
-  {
    "fieldname": "column_break_ekfh",
    "fieldtype": "Column Break"
   },
@@ -84,25 +80,10 @@
    "options": "Quiz List Name"
   },
   {
-   "fieldname": "response_capture_tab",
-   "fieldtype": "Tab Break",
-   "label": "Response Capture"
-  },
-  {
-   "fieldname": "response_capture_table_section",
-   "fieldtype": "Section Break",
-   "label": "Response Capture Table"
-  },
-  {
    "fieldname": "response_table",
    "fieldtype": "Table",
    "label": "Response Table",
-   "options": "User Response Capture Table"
-  },
-  {
-   "fieldname": "user_score_capture_tab",
-   "fieldtype": "Tab Break",
-   "label": "User Score Capture"
+   "options": "User Response Table"
   },
   {
    "fieldname": "score_card_section",
@@ -146,17 +127,38 @@
    "label": "Quiz Completed Status"
   },
   {
-   "fieldname": "score_capture_details_tab",
+   "fieldname": "quiz_group",
+   "fieldtype": "Link",
+   "label": "Quiz Group",
+   "options": "Quiz Group"
+  },
+  {
+   "fieldname": "user_score_tab",
    "fieldtype": "Tab Break",
-   "label": "Score Capture Details"
+   "label": "User Score"
+  },
+  {
+   "fieldname": "user_response_tab",
+   "fieldtype": "Tab Break",
+   "label": "User Response"
+  },
+  {
+   "fieldname": "response__table_section",
+   "fieldtype": "Section Break",
+   "label": "Response  Table"
+  },
+  {
+   "fieldname": "score_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Score Details"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-20 22:20:03.913486",
+ "modified": "2024-05-22 07:35:25.532652",
  "modified_by": "Administrator",
  "module": "Easy-Q",
- "name": "Quiz User Response Capture",
+ "name": "Quiz User Response",
  "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [

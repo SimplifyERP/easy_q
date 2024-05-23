@@ -95,7 +95,7 @@
  "modified": "2024-05-20 16:52:32.111019",
  "modified_by": "Administrator",
  "module": "Easy-Q",
- "name": "User Response Capture Table",
+ "name": "User Response Table",
  "owner": "Administrator",
  "permissions": [],
  "sort_field": "modified",

@@ -13,7 +13,7 @@
   "column_break_etif",
   "disabled",
   "quiz_filters_section",
-  "quiz_customer_group",
+  "quiz_group",
   "column_break_kpyr",
   "quiz_list_name",
   "quiz_options_and_marks_tab",
@@ -82,14 +82,6 @@
    "fieldname": "quiz_filters_section",
    "fieldtype": "Section Break",
    "label": "Quiz Filters"
-  },
-  {
-   "fieldname": "quiz_customer_group",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Quiz Customer Group",
-   "options": "Customer Group",
-   "reqd": 1
   },
   {
    "fieldname": "column_break_kpyr",
@@ -216,11 +208,19 @@
    "fieldname": "mark_6",
    "fieldtype": "Int",
    "label": "Mark 6"
+  },
+  {
+   "fieldname": "quiz_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Quiz Group",
+   "options": "Quiz Group",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-20 17:25:29.369539",
+ "modified": "2024-05-21 19:41:05.550146",
  "modified_by": "Administrator",
  "module": "Easy-Q",
  "name": "Quiz",

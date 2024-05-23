@@ -7,7 +7,7 @@
  "engine": "InnoDB",
  "field_order": [
   "quiz_filters_section",
-  "quiz_customer_group",
+  "quiz_group",
   "disabled",
   "column_break_jixm",
   "quiz_list_name",
@@ -24,19 +24,11 @@
    "label": "Quiz Filters"
   },
   {
-   "fieldname": "quiz_customer_group",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Quiz Customer Group",
-   "options": "Customer Group",
-   "reqd": 1
-  },
-  {
    "fieldname": "column_break_jixm",
    "fieldtype": "Column Break"
   },
   {
-   "depends_on": "eval:doc.quiz_customer_group",
+   "depends_on": "eval:doc.quiz_group",
    "fieldname": "quiz_list_name",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -78,11 +70,19 @@
    "fieldname": "disabled",
    "fieldtype": "Check",
    "label": "Disabled"
+  },
+  {
+   "fieldname": "quiz_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Quiz Group",
+   "options": "Quiz Group",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-20 22:20:34.838364",
+ "modified": "2024-05-22 07:16:08.055647",
  "modified_by": "Administrator",
  "module": "Easy-Q",
  "name": "Quiz Score Card",
